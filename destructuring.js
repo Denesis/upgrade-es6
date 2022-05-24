@@ -33,14 +33,22 @@ const animalFunction = () => {
   return { name: "Bengal Tiger", race: "Tiger" };
 };
 
+let { name, race } = animalFunction();
+console.log(name);
+console.log(race);
+
 // 2.4 En base al siguiente javascript, usa destructuring para crear las
 // variables name y itv con sus respectivos valores. Posteriormente crea
 // 3 variables usando igualmente el destructuring para cada uno de los años
 // y comprueba que todo esta bien imprimiendolo.
 
-const car = { name: "Mazda 6", itv: [2015, 2011, 2020] };
+const car = { name1: "Mazda 6", itv: [2015, 2011, 2020] };
 
-const family = { papa: "Mig", mama: "Tutu" };
-// ...family --> papa: 'Mig', mama: 'Tutu'
-const newFamily = { ...family, hijito: "Olivito" };
-// newFamily --> { ...{ papa: 'Mig', mama: 'Tutu' }, hijito: 'Olivito' } ---> { papa: 'Mig', mama: 'Tutu', hijito: 'Olivito' }
+let { name1, itv } = car;
+console.log(name);
+console.log(itv);
+
+let [year1, year2, year3] = car.itv;
+console.log(year1);
+console.log(year2);
+console.log(year3);
