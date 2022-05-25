@@ -22,7 +22,7 @@ const users1 = [
 ];
 
 const nameChange = users1.map((user) => {
-  if (user.name.includes("A")) {
+  if (user.name[0] === "A") {
     return (user.name = "Anacleto");
   }
   return user.name;
